@@ -2,14 +2,14 @@
 
 
 ### creates a special matrix object that can cache its inverse ###
-make_cache_matrix <- function(m = matrix()) 
+makeCacheMatrix <- function(m = matrix()) 
 
  {
    ### initialize the inverse ###
    i <- NULL
 
    ### method to set the matrix ###
-     set <- function( matrix )
+     set <- function(matrix)
      {
        m <<- matrix
        i <<- NULL
@@ -41,8 +41,6 @@ make_cache_matrix <- function(m = matrix())
      getInverse = getInverse)
  }
 
-
-## Write a short comment describing this function
 
  ### generate the inverse of the special matrix which is returned by function "make_cache_matrix" ###
  ### above. If the inverse has already been calculated and the matrix is not changed              ###
